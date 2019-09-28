@@ -5,6 +5,7 @@ import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 import Modal from '../../components/UI/Modal/Modal';
 import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
+// import webgazer from '../../webcam/webgazer';
 
 const INGREDIENT_PRICES = {
     salad: 0.5,
@@ -29,6 +30,18 @@ class BurgerBuilder extends Component {
         purchasable: false,
         purchasing: false
     }
+
+    // enableGazeInteraction = () => {
+    //     webgazer.setGazeListener(function(data, elapsedTime) {
+    //         if (data == null) {
+    //             return;
+    //         }
+    //         var xprediction = data.x; //these x coordinates are relative to the viewport
+    //         var yprediction = data.y; //these y coordinates are relative to the viewport
+    //         console.log(elapsedTime); //elapsed time is based on time since begin was called
+    //     }).begin();
+    // }
+
 
     updatePurchaseState (ingredients) {
         const sum = Object.keys( ingredients )
