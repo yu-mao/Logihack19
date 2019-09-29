@@ -1,6 +1,6 @@
-# server_pusher_reactvr_musical
+# server part
 
-A Node.js server that publishes events to a Pusher channel so [React VR clients](https://github.com/eh3rrera/reactvr_musical) can play sounds.
+A Node.js server that publishes events to a Pusher channel so React VR clients can play sounds.
 
 # Requirements
 
